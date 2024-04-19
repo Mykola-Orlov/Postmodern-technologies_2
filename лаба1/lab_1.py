@@ -8,3 +8,8 @@ def reverse_string(actual_argument):
     except Exception as e:
         sys.stderr.write(f"Error: {e}\n")
         sys.exit(1)
+
+if __name__ == "__main__":
+    input_str = sys.stdin.readline().strip()
+    reversed_str = reverse_string(input_str)
+    sys.stdout.write(reversed_str)

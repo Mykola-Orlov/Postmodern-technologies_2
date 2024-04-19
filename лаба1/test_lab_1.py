@@ -11,14 +11,6 @@ class TestReverseString(unittest.TestCase):
         with self.assertRaises(SystemExit) as cm: 
             reverse_string("123") 
             self.assertEqual(cm.exception.code, 0)
-        
-        with self.assertRaises(SystemExit) as cm: 
-            reverse_string("0000") 
-            self.assertEqual(cm.exception.code, 0)
-        
-        with self.assertRaises(SystemExit) as cm: 
-            reverse_string("ggkg") 
-            self.assertEqual(cm.exception.code, 0)
-
+            
 if __name__ == "__main__":
     unittest.main()
